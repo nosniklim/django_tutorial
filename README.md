@@ -38,3 +38,10 @@ runserver はデフォルトでは8000ポートで起動するのでCloud9の場
 mysite のサブモジュールではなく manage.py のすぐ隣に作る場合
 `python manage.py startapp polls`
 
+## URLconf
+ルーティングを設定するため polls ディレクトリに urls.py というファイルを追加したら、  
+ルートのURLconfに polls.urls モジュールの記述を反映
+
+include() 関数は他の URLconf への参照するURLプラグ＆プレイ
+
+
