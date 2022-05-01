@@ -31,3 +31,10 @@ runserver はデフォルトでは8000ポートで起動するのでCloud9の場
 
 ここまででCloud9でアプリケーションが起動するところまでを確認！！！
 
+
+## アプリケーション追加
+アプリケーションは Python path のどこにでも設置可能
+
+mysite のサブモジュールではなく manage.py のすぐ隣に作る場合
+`python manage.py startapp polls`
+
