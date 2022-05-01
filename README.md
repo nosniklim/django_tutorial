@@ -23,3 +23,11 @@ db.sqlite3
 
 Note: Cloud9のサポート言語がPython3になっていることを要確認
 
+## 開発用のサーバー起動
+`python manage.py runserver`
+
+runserver はデフォルトでは8000ポートで起動するのでCloud9の場合は8080を指定
+`python manage.py runserver 8080`
+
+ここまででCloud9でアプリケーションが起動するところまでを確認！！！
+
