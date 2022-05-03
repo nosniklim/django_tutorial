@@ -76,3 +76,14 @@ sqlmigrate コマンドで実行されるSQLを確認することができる
 manage.py を使用することで DJANGO_SETTINGS_MODULE 環境変数を設定
 （Django に mysite/settings.py ファイルへの import パスが与えられる）
 
+## Django Admin
+### 管理ユーザーを作成
+`python manage.py createsuperuser`
+
+とりあえず適当に設定したら runserver して`http://127.0.0.1:8000/admin/`へアクセス
+```
+admin
+admin@example.com
+adminadmin
+```
+
