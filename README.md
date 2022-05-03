@@ -87,3 +87,12 @@ admin@example.com
 adminadmin
 ```
 
+## Djangoのルーティング
+1. `ROOT_URLCONF`に指定されている Python モジュール`mysite.urls`をロード
+2. urlpatterns という変数を順番にパターンを検査
+3. `polls/` にマッチした箇所を見つけた後、("polls/") を取り除く
+4. 残りの文字列 "34/" を次の処理のために`polls.urls`の URLconf に渡す
+5. '<int：question_id>/'でdetail() が呼び出される
+
+山括弧を使用すると、URLの一部が「キャプチャ」され、キーワード引数としてビュー関数に送信される
+
