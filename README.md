@@ -26,7 +26,7 @@ Note: Cloud9のサポート言語がPython3になっていることを要確認
 ## 開発用のサーバー起動
 `python manage.py runserver`
 
-runserver はデフォルトでは8000ポートで起動するのでCloud9の場合は8080を指定
+runserver はデフォルトでは8000ポートで起動するのでCloud9の場合は8080を指定  
 `python manage.py runserver 8080`
 
 ここまででCloud9でアプリケーションが起動するところまでを確認！！！
@@ -48,7 +48,7 @@ include() 関数は他の URLconf への参照するURLプラグ＆プレイ
 ### 設定ファイル
 `mysite/settings.py`
 
-migrate コマンドで  mysite/settings.py の INSTALLED_APPS が利用できるようになる
+migrate コマンドで  mysite/settings.py の INSTALLED_APPS が利用できるようになる  
 （不要な場合は INSTALLED_APPS を削除してからmigrate）
 `python manage.py migrate`
 
@@ -64,16 +64,16 @@ Field インスタンスには機械可読なフィールド名と人間可読�
 ### モデルの変更からmigrationファイル作成
 `python manage.py makemigrations polls`
 
-**マイグレーション**
+**マイグレーション**  
 `python manage.py migrate`
 
-sqlmigrate コマンドで実行されるSQLを確認することができる
+sqlmigrate コマンドで実行されるSQLを確認することができる  
 `python manage.py sqlmigrate polls 0001`
 
 ## 対話シェル
 `python manage.py shell`
 
-manage.py を使用することで DJANGO_SETTINGS_MODULE 環境変数を設定
+manage.py を使用することで DJANGO_SETTINGS_MODULE 環境変数を設定  
 （Django に mysite/settings.py ファイルへの import パスが与えられる）
 
 ## Django Admin
@@ -97,6 +97,6 @@ adminadmin
 山括弧を使用すると、URLの一部が「キャプチャ」され、キーワード引数としてビュー関数に送信される
 
 ## ビュー
-ビューはHttpResponse オブジェクト、もしくは Http404 のような例外を返す
+ビューはHttpResponse オブジェクト、もしくは Http404 のような例外を返す  
 （テンプレートをロードしてコンテキストに値を入れ、テンプレートをレンダリングした結果を HttpResponse オブジェクトで返す）
 
