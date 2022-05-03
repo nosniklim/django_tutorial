@@ -61,3 +61,18 @@ Field インスタンスには機械可読なフィールド名と人間可読�
 ### モデルを有効化
 アプリケーションをプロジェクトに含めるには、構成クラスへの参照を INSTALLED_APPS 設定に追加する必要がある
 
+### モデルの変更からmigrationファイル作成
+`python manage.py makemigrations polls`
+
+**マイグレーション**
+`python manage.py migrate`
+
+sqlmigrate コマンドで実行されるSQLを確認することができる
+`python manage.py sqlmigrate polls 0001`
+
+## 対話シェル
+`python manage.py shell`
+
+manage.py を使用することで DJANGO_SETTINGS_MODULE 環境変数を設定
+（Django に mysite/settings.py ファイルへの import パスが与えられる）
+
