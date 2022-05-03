@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ["d9b722da48b4408b9af5db15922723b5.vfs.cloud9.us-east-1.amazonaw
 # Application definition
 
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

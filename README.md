@@ -48,7 +48,16 @@ include() 関数は他の URLconf への参照するURLプラグ＆プレイ
 ### 設定ファイル
 `mysite/settings.py`
 
-migrate コマンドで  mysite/settings.py の INSTALLED_APPS が利用できるようになる  
-（不要な場合は INSTALLED_APPS を削除してからmigrate）  
+migrate コマンドで  mysite/settings.py の INSTALLED_APPS が利用できるようになる
+（不要な場合は INSTALLED_APPS を削除してからmigrate）
 `python manage.py migrate`
+
+### モデル作成
+`django.db.models.Model`のサブクラス
+各フィールドは Field クラスのインスタンスとして表現される
+
+Field インスタンスには機械可読なフィールド名と人間可読なフィールド名がある
+
+### モデルを有効化
+アプリケーションをプロジェクトに含めるには、構成クラスへの参照を INSTALLED_APPS 設定に追加する必要がある
 
