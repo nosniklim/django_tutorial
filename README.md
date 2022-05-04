@@ -102,3 +102,16 @@ adminadmin
 
 ### 404エラー
 モデルとビューのカップリングを回避するため、エラー送出機能では`get_object_or_404()`もしくは`get_list_or_404()`を使用する
+
+## POSTフォーム
+### リクエストの値取得
+`request.POST['xxxx']`で、リクエストのパラメーターの値を文字列で取得
+キーが存在しない場合は`KeyError`が発生
+
+### リダイレクト
+- `HttpResponse`ではなく`HttpResponseRedirect`を使用する
+- リダイレクト先のURLはハードコードせず`reverse()関数`を使って定義する
+
+### CSRF対策
+POST フォームでは {% csrf_token %} テンプレートタグを使用する
+
