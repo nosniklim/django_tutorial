@@ -115,3 +115,11 @@ adminadmin
 ### CSRF対策
 POST フォームでは {% csrf_token %} テンプレートタグを使用する
 
+## ListView / DetailView
+「オブジェクトのリストを表示する」および「あるタイプのオブジェクトの詳細ページを表示する」という二つの概念を抽象化することができる
+
+**デフォルトで使用されるテンプレート**
+- DetailView 汎用ビューは`<app name>/<model name>_detail.html`という名前のテンプレート  
+- ListView 汎用ビューは`<app name>/<model name>_list.html`という名前のテンプレート
+他のテンプレートへレンダリングする場合は`template_name`を指定
+
