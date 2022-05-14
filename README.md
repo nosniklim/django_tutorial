@@ -156,3 +156,11 @@ In [7]: response.status_code
 In [8]: response.context['latest_question_list']
 <QuerySet [<Question: What's up?>]>
 ```
+
+## アサーションメソッド
+値のチェックを行いたい場合 
+- assertContains()
+- assertQuerysetEqual()
+
+結果が空であることを確認する例
+`self.assertQuerysetEqual(response.context['column_name'], [])`
