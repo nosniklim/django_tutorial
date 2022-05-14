@@ -138,3 +138,21 @@ In [2]: Question.objects.get(id=1).question_text
 Out[2]: "What's up?"
 In [3]: exit
 ```
+
+```
+$ python manage.py shell
+
+In [1]: from django.test import Client
+In [2]: client = Client()
+In [3]: response = client.get('/')
+Not Found: /
+In [4]: response.status_code
+404
+
+In [5]: from django.urls import reverse
+In [6]: response = client.get(reverse('polls:index'))
+In [7]: response.status_code
+200
+In [8]: response.context['latest_question_list']
+<QuerySet [<Question: What's up?>]>
+```
