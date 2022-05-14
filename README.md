@@ -129,3 +129,12 @@ POST フォームでは {% csrf_token %} テンプレートタグを使用する
 実行コマンド
 `python manage.py test polls`
 
+### デバッグ方法
+```
+$ python manage.py shell
+
+In [1]: from polls.models import Question
+In [2]: Question.objects.get(id=1).question_text
+Out[2]: "What's up?"
+In [3]: exit
+```
