@@ -123,3 +123,9 @@ POST フォームでは {% csrf_token %} テンプレートタグを使用する
 - ListView 汎用ビューは`<app name>/<model name>_list.html`という名前のテンプレート
 他のテンプレートへレンダリングする場合は`template_name`を指定
 
+## テストコード
+アプリケーション直下の`tests.py`に記述
+
+実行コマンド
+`python manage.py test polls`
+
