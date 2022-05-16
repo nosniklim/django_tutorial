@@ -176,9 +176,12 @@ Djangoは名前がマッチした最初のテンプレートを使用するの�
 ## Adminのカスタマイズ
 adminをカスタマイズしたい場合はモデルごとにadminクラスを作成してパラメーターとして渡す
 
-## Djangoの実行ファイルの場所
+### Djangoの実行ファイルの場所
 ```
 python -c "import django; print(django.__path__)"
 ```
 
 ここに置いてある`django/contrib/admin/templates/admin/base_site.html`をコピーして利用
+
+### 補足
+タイトルと変えるだけならテンプレートをコピーしなくても`django.contrib.admin.AdminSite.site_header属性`を利用すれば変更可能
