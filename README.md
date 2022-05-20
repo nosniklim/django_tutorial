@@ -23,6 +23,43 @@ db.sqlite3
 
 Note: Cloud9のサポート言語がPython3になっていることを要確認
 
+### GitHub
+#### リポジトリ作成
+画面右上で「New repository」をクリック
+→「Repository」を入力
+→練習用なので「Private」を選択
+→「Create repository」をクリック
+
+### 秘密鍵作成
+#### 演習/事前準備
+```
+cd /home/ec2-user/environment　※初期状態であればcd不要
+ssh-keygen
+cat ~/.ssh/id_rsa.pub
+```
+→Github＞Settings＞New SSH key
+→マシン名等が想像しやすいTitleをつけて、Keyに先程のid_rsa.pubの内容をコピー
+
+#### 接続確認
+```ssh git@github.com```
+
+### 接続設定
+```
+git config --global user.name "GitHubのユーザ名"
+git config --global user.email "GitHubに登録したメアド"
+```
+
+接続先を変えたい場合は```--local```を使用
+```
+git config --local user.name "GitHubのユーザ名"
+git config --local user.email "GitHubに登録したメアド"
+```
+
+やり直したい場合は各キーに```--unset```をつけると削除することができる
+```
+git config --unset user.email
+```
+
 ## 開発用のサーバー起動
 `python manage.py runserver`
 
