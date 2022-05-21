@@ -224,4 +224,4 @@ python -c "import django; print(django.__path__)"
 ここに置いてある`django/contrib/admin/templates/admin/base_site.html`をコピーして利用
 
 ### 補足
-タイトルと変えるだけならテンプレートをコピーしなくても`django.contrib.admin.AdminSite.site_header属性`を利用すれば変更可能
+タイトルを変えるだけならテンプレートをコピーしなくても`django.contrib.admin.AdminSite.site_header属性`を利用すれば変更可能
