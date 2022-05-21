@@ -107,6 +107,9 @@ Field インスタンスには機械可読なフィールド名と人間可読�
 sqlmigrate コマンドで実行されるSQLを確認することができる  
 `python manage.py sqlmigrate polls 0001`
 
+**データベース**
+Sqliteの場合は`db.sqlite3`が直下に作成される
+
 ## 対話シェル
 `python manage.py shell`
 
