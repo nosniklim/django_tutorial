@@ -225,3 +225,9 @@ python -c "import django; print(django.__path__)"
 
 ### 補足
 タイトルを変えるだけならテンプレートをコピーしなくても`django.contrib.admin.AdminSite.site_header属性`を利用すれば変更可能
+
+## 多言語機能(i18n)の修正方法
+1. `setting.py`に`LOCALE_PATHS`を追加
+2. ビルトインアプリのロケールをアプリケーション直下にコピー（adminの場合は'contrib/admin/locale'）
+3. コピーした`.po`ファイルを編集
+4. `python manage.py compilemessages -l ja`を実行
