@@ -1,4 +1,4 @@
-# Django開発入門
+# Djangoチュートリアル
 https://docs.djangoproject.com/ja/2.2/intro/tutorial01/
 
 ## Djangoのインストール確認
