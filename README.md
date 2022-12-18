@@ -11,7 +11,7 @@ startprojectでプロジェクト作成
 ディレクトリ構成の詳細はチュートリアル参照
 
 ## .gitignore追加
-djangoってデフォルトで.gitignoreが作成されないので自分で用意
+djangoってデフォルトで.gitignoreが作成されないので自分で用意  
 https://zenn.dev/wtkn25/articles/django-gitignore
 ```
 *.log
@@ -21,7 +21,7 @@ db-volumes/
 db.sqlite3
 ```
 
-Note: Cloud9のサポート言語がPython3になっていることを要確認
+Note: Cloud9のサポート言語がPython3になっていることを確認
 
 ### GitHub
 #### リポジトリ作成
